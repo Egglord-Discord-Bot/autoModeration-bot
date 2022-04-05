@@ -1,0 +1,43 @@
+{
+  "textBased": {
+    "badwords": {
+      "enabled": true,
+      "list": ["list", "of", "bad", "words"],
+      "response": "delete"
+    },
+    "links": {
+      "enabled": true,
+      "phishingEnabled": true,
+      "whitelist": ["whitelist", "of", "domains", "www.youtube.com"],
+      "response": "warn&delete"
+    },
+    "mentions": {
+      "enabled": true,
+      "max": 5,
+      "response": "delete"
+    },
+    "emojis": {
+      "enabled": true,
+      "max": 5,
+      "response": "delete"
+    },
+    "repeated": {
+      "enabled": true,
+      "multiMessage": true,
+      "response": "delete"
+    },
+    "caps": {
+      "enabled": true,
+      "percentage": 60,
+      "response": "delete"
+    }
+  },
+  "accounts": {
+    "enabled": true,
+    "ageMin": "14 days",
+    "maxJoinsADay": 100,
+    "response": "kick"
+  },
+  "ignoreBots": true,
+  "modChannel": "1234567899"
+}
